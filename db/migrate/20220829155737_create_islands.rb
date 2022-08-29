@@ -7,7 +7,7 @@ class CreateIslands < ActiveRecord::Migration[7.0]
       t.decimal :price
       t.text :description
 
-      t.references :user, foreign_key: true
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
