@@ -19,7 +19,7 @@
             <%= link_to "Bookings", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Log-out", "#", class: "nav-link" %>
+            <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link logout" %>
           </li>
           <li class="nav-item dropdown">
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
