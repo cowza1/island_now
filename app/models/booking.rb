@@ -1,5 +1,5 @@
 class Booking < ApplicationRecord
-  belongs_to :user, through: :island
+  belongs_to :user
   belongs_to :island
   validates :date, presence: true
   validates :number_of_guest, presence: true
