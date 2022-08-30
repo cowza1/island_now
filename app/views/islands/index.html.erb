@@ -9,9 +9,9 @@
       <img src="https://a0.muscache.com/im/pictures/miso/Hosting-555632030522710376/original/c8b5a0c1-0468-4402-a772-2b93d75366df.jpeg?im_w=720" alt="card__image" class="card__image" width="600">
     </div>
     <div class="card__body">
-      <span class="tag tag-blue"><%=island.location%></span>
-      <h4><%=island.name%></h4>
-      <p><%=island.description%></p>
+      <span class="tag tag-blue"><%=island.name%><% island.location%></span>
+      <h4><%=island.location%></h4>
+      <p><%=island.mini_description%></p>
       <p>$<%=island.price%></p>
       <%=link_to"Take a closer look!", island_path(island)%>
     </div>
