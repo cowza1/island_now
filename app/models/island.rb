@@ -1,5 +1,5 @@
 class Island < ApplicationRecord
-  has_many :islands
+  has_many :bookings
   belongs_to :user
   validates :name, presence: true
   validates :location, presence: true
