@@ -18,9 +18,13 @@
             <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> contact us</a>
           </p>
           <p>Hello! We are the go-to provider for all your Island renting needs, we hope you enjoy your staycation!</p>
+          <% if user_signed_in?%>
           <a href="/islands" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
           <%# <%= link_to "Discover Islands", islands_path, class: "btn btn--with-icon btn-icon fa fa-long-arrow-right" %>
         </div>
+       <% else %>
+       <a href="/users/sign_in" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
+       <%end%>
       </article>
     </div>
   </div>
