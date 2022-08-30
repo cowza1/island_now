@@ -1,0 +1,16 @@
+<h1>View your bookings!</h1>
+
+<div class="container row d-flex">
+ <%@bookings.each do |booking|%>
+ <div class="card col-4">
+    <div class="card__body">
+      <span class="tag tag-blue">Your Booking!</span>
+      <h4><%=booking.island.name%></h4>
+      <p>Contact: <%= booking.user.email%></p>
+       <p>Number of Guests<%=booking.number_of_guest%></p>
+      <p>Check in: <%=booking.check_in_date%></p>
+      <p>Check out: <%=booking.checkout_date%></p>
+      </div>
+    </div>
+      <%end%>
+  </div>
