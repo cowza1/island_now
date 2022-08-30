@@ -1,4 +1,4 @@
-<%# <h1>Create a booking for <%=@island.name%>!</h1> %>
+<h1>Create a booking for <%=@island.name%>!</h1>
 <%= simple_form_for [@island, @booking] do |f| %>
   <%= f.input :date %>
   <%= f.input :number_of_guest%>
