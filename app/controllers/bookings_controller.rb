@@ -1,4 +1,12 @@
 class BookingsController < ApplicationController
+  def index
+    @bookings = Booking.all
+  end
+
+  def show
+    @booking = Booking.find(params[:id])
+  end
+
   def new
     @island = Island.find(params[:island_id])
     @booking = Booking.new
@@ -16,6 +24,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:number_of_guest, :island_id, :check_in_date, :checkout_date, :date)
+    params.require(:booking).permit(:number_of_guest, :island_id, :check_in_date, :checkout_date)
   end
 end
