@@ -14,6 +14,8 @@ require "faker"
     location:  Faker::WorldCup.group,
     availability: true,
     price: rand(3000..10000000),
-    description: Faker::GreekPhilosophers.quote
+    description: Faker::GreekPhilosophers.quote,
+    mini_description: Faker::Quotes::Shakespeare.as_you_like_it_quote
+
   )
 end
