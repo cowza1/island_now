@@ -1,116 +1,33 @@
-<h1>Island Now</h1>
-<p>Welcome to Island Now, please select an island</p>
-<br>
-
-<div class="container row d-flex justify-content-around">
-  <div class="card col-4">
-    <div class="card__header">
-      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-555632030522710376/original/c8b5a0c1-0468-4402-a772-2b93d75366df.jpeg?im_w=720" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-blue">Sali, Croatia, Croatia</span>
-      <h4></h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
-        <div class="user__info">
-          <h5>Jane Doe</h5>
-          <small>2h ago</small>
+<link rel="stylesheet" href="/stylesheets/pages/_home.scss"/>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <article class="blog-card">
+        <div class="blog-card__background">
+          <div class="card__background--wrapper">
+            <div class="card__background--main" style="background-image: url('https://media.istockphoto.com/photos/zakynthos-greek-island-navagio-bay-picture-id611174546?k=20&m=611174546&s=612x612&w=0&h=4F6wFZ65lkTW65lqqxjy6m0wmxJ2hQuKB_7guoUOYf4=');">
+              <div class="card__background--layer"></div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="blog-card__head">
+        </div>
+        <div class="blog-card__info">
+          <h5>Welcome to Island Now!</h5>
+          <p>
+            <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> contact us</a>
+          </p>
+          <p>Hello! We are the go-to provider for all your Island renting needs, we hope you enjoy your staycation!</p>
+          <a href="/islands" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
+          <%# <%= link_to "Discover Islands", islands_path, class: "btn btn--with-icon btn-icon fa fa-long-arrow-right" %>
+        </div>
+      </article>
     </div>
   </div>
-  <div class="card col-4">
-    <div class="card__header">
-      <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-brown">Food</span>
-      <h4>Delicious Food</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
-        <div class="user__info">
-          <h5>Jony Doe</h5>
-          <small>Yesterday</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card col-4">
-    <div class="card__header">
-      <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-red">Automobile</span>
-      <h4>Race to your heart content</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
-        <div class="user__info">
-          <h5>John Doe</h5>
-          <small>2d ago</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card col-4">
-    <div class="card__header">
-      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-555632030522710376/original/c8b5a0c1-0468-4402-a772-2b93d75366df.jpeg?im_w=720" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-blue">Sali, Croatia, Croatia</span>
-      <h4></h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
-        <div class="user__info">
-          <h5>Jane Doe</h5>
-          <small>2h ago</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card col-4">
-    <div class="card__header">
-      <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-brown">Food</span>
-      <h4>Delicious Food</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
-        <div class="user__info">
-          <h5>Jony Doe</h5>
-          <small>Yesterday</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card col-4">
-    <div class="card__header">
-      <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-red">Automobile</span>
-      <h4>Race to your heart content</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
-        <div class="user__info">
-          <h5>John Doe</h5>
-          <small>2d ago</small>
 </div>
+
+<section class="detail-page">
+  <div class="container mt-5">
+
+  </div>
+</section>
