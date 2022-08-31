@@ -10,8 +10,8 @@ puts "destroy_islands"
 Island.destroy_all
 puts "destroy_users"
 User.destroy_all
-user_1 = User.create!(email: "bernard@gmail.com", password: 123456 )
-user_2 = User.create!(email: "adam@gmail.com", password: 123456 )
+user_1 = User.create!(email: "bernard@gmail.com", password: 123456, first_name: "Ben", last_name:"Simpson", avatar:"https://robohash.org/sitsequiquia.png?size=300x300&set=set3")
+user_2 = User.create!(email: "adam@gmail.com", password: 123456, first_name: "Adam", last_name: "Couser", avatar:"https://robohash.org/sitsequiquia.png?size=300x300&set=set4")
 puts "creating_islands"
 5.times do
   Island.create!(
