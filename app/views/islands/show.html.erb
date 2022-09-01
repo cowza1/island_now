@@ -1,20 +1,30 @@
-
-<div class="row mt-4">
-<div class="col-8 mx-auto card-trip pt-3 pl-3 pr-3">
-<div class="image-island">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-  </div>
-  <div class="card-trip-infos">
-    <div>
-      <h2><%=@island.name%></h2>
-      <p><%=@island.description%></p>
-      <br>
-      <p><strong>$<%=@island.price%></strong></p>
-      <br>
-      <p><%=link_to "Go back to the Islands", islands_path%></p>
-      <p><%=link_to "BOOK HERE",  new_island_booking_path(@island)%></p>
-    </div>
-    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+<div class="banner d-flex flex column center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+  <div class="container">
+    <div class="banner-info">
+      <h1><strong><%=@island.name%></strong></h1>
+      <p>Book Your Stay Below!</p>
+     </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-6 mx-6 mx-6 pt-2 pl-2 pr-2">
+    <div class="card-trip">
+      <div class="image-island">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      </div>
+      <div class="card-trip-infos">
+        <div>
+          <h2><%=@island.name%></h2>
+          <p><%=@island.description%></p>
+          <br>
+          <p><strong>$<%=@island.price%></strong></p>
+          <br>
+          <p><%=link_to "Go back to the Islands", islands_path, class: "btn btn-flat mb-2 text-center pt-1"%></p>
+          <p><%=link_to "Book here", new_island_booking_path(@island), class: "btn btn-flat mb"%></p>
+        </div>
+        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered text-center" />
+      </div>
+    </div>
+  </div>
 </div>
