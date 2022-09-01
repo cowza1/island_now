@@ -8,6 +8,7 @@
 </div>
 
 <div class="row">
+
   <div class="col-6 mx-6 mx-6 pt-2 pl-2 pr-2">
     <div class="card-trip">
       <div class="image-island">
@@ -27,4 +28,11 @@
       </div>
     </div>
   </div>
+
+  <div style="width: 600px; height: 900px;"
+    data-controller="map"
+    data-map-markers-value="<%= @markers.to_json %>"
+    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+
 </div>
