@@ -10,6 +10,12 @@ class IslandsController < ApplicationController
 
   def show
     @island = Island.find(params[:id])
+    @markers = [
+      {
+        lat: @island.latitude,
+        lng: @island.longitude
+      }
+    ]
   end
 
   def new
@@ -20,6 +26,7 @@ class IslandsController < ApplicationController
     @island = Island.new(island_params)
     @island.user = current_user
     @island.save
+    redirect_to islands_path
   end
 
   private

@@ -1,16 +1,18 @@
-<h1>View your bookings!</h1>
 
-<div class="container row d-flex">
- <%current_user.bookings.each do |booking|%>
- <div class="card col-4">
-    <div class="card__body">
-      <span class="tag tag-blue">Your Booking!</span>
-      <h4><%=booking.island.name%></h4>
-      <p>Contact: <%= booking.user.email%></p>
-       <p>Number of Guests<%=booking.number_of_guest%></p>
+<div class="booking_container" style="background-image: url('https://res.cloudinary.com/dpt3b8spa/image/upload/v1662040242/development/wang-xi-RTrZvGlvlQc-unsplash_c4ysj7.jpg')">
+<h1>Upcoming bookings</h1>
+<%current_user.bookings.each_with_index do |booking, index|%>
+<div class="card-container d-flex justify-content-center m-4">
+<div class="card-product">
+<%=cl_image_tag booking.island.photo.key,width:400, height: 200, crop: :fill %>
+  <div class="card-product-infos">
+    <h2>Booking number: <%=index+1%></h2>
+   <p>Contact: <%= booking.user.email%></p>
+       <p>Number of Guests: <%=booking.number_of_guest%></p>
       <p>Check in: <%=booking.check_in_date%></p>
       <p>Check out: <%=booking.checkout_date%></p>
-      </div>
     </div>
-      <%end%>
-  </div>
+</div>
+</div>
+   <%end%>
+</div>
