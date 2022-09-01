@@ -1,6 +1,11 @@
 class IslandsController < ApplicationController
   def index
-    @islands = Island.all
+    if params[:query].present?
+      @islands = Island.search_by_name_and_location(params[:query])
+    else
+      @islands = Island.all
+    end
+
   end
 
   def show
