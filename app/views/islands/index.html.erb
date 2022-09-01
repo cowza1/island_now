@@ -17,8 +17,8 @@
       <%=cl_image_tag island.photo.key, width:400, height: 200, crop: :fill %>
     </div>
     <div class="card__body">
-      <span class="tag tag-blue"><%=island.name%><% island.location%></span>
-      <h4><%=island.location%></h4>
+      <span class="tag tag-blue"><%=island.location%></span>
+      <h4><%=island.name%></h4>
       <p><%=island.mini_description%></p>
       <p>$<%=island.price%></p>
       <%=link_to"Take a closer look!", island_path(island)%>
