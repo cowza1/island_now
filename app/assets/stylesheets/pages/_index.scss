@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import 'home';
 @import 'show';
+@import 'new_booking';
+
 *,
 *::before,
 *::after {
@@ -61,25 +63,25 @@ img {
   font-size: .75rem;
 }
 
-.tag + .tag {
+.tag+.tag {
   margin-left: .5em;
 }
 
 .tag-blue {
   background: #56CCF2;
-background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
   color: #fafafa;
 }
 
 .tag-brown {
   background: #D1913C;
-background: linear-gradient(to bottom, #FFD194, #D1913C);
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
   color: #fafafa;
 }
 
 .tag-red {
   background: #cb2d3e;
-background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   color: #fafafa;
 }
 
@@ -103,7 +105,7 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   border-radius: 40%;
 }
 
-.user__info > small {
+.user__info>small {
   color: #666;
 }
 
@@ -124,7 +126,7 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
 .banner h1 {
   margin: auto 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   font-size: 32px;
   font-weight: bold;
 }
@@ -133,7 +135,7 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   font-size: 20px;
   color: white;
   opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .banner-info {
