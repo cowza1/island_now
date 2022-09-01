@@ -18,7 +18,7 @@ class BookingsController < ApplicationController
     @booking.island = @island
     @booking.user = current_user
     @booking.save
-    redirect_to island_path(@island)
+    redirect_to islands_path
   end
 
   private

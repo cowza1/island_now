@@ -1,7 +1,7 @@
 <h1>View your bookings!</h1>
 
 <div class="container row d-flex">
- <%@bookings.each do |booking|%>
+ <%current_user.bookings.each do |booking|%>
  <div class="card col-4">
     <div class="card__body">
       <span class="tag tag-blue">Your Booking!</span>
