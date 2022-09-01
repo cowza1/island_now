@@ -1,11 +1,21 @@
-<h1>Create an Island!</h1>
-
+<div class="booking-banner" style="background-image: url('https://res.cloudinary.com/dpt3b8spa/image/upload/v1662042700/development/peter-fogden-toB7tKXne7U-unsplash_uhweus.jpg')">
+<div class="banner-info">
+<h1>Share your Island with others</h1>
+</div>
+<div class="form">
+<div class="container d-flex justify-content-center">
+<div class="card d-flex align-items-center justify-content-center">
 <%= simple_form_for [@user, @island] do |f| %>
-  <%= f.input :name %>
-  <%= f.input :location%>
-  <%= f.input :mini_description%>
-  <%= f.input :description%>
-  <%= f.input :price%>
-  <%= f.input :photo, as: :file%>
+  <%= f.input :name, :label => "What is the name of your Island?" %>
+  <%= f.input :location, :label => "Where is your Island located?"%>
+  <%= f.input :mini_description, :label => "Provide a small description"%>
+  <%= f.input :description, :label => "Tell us more about your Island!"%>
+  <%= f.input :price, placeholder: "$", :label=> "How much per night?"%>
+  <%= f.input :photo, as: :file, :label =>"Upload a beautiful picture of your Island"%>
   <%= f.button :submit %>
 <% end %>
+</div>
+    </div>
+  </div>
+</div>
+</div>
