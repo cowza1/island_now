@@ -12,18 +12,17 @@
         </div>
         <div class="blog-card__head">
         </div>
-        <div class="blog-card__info">
-          <h5>Welcome to Island Now!</h5>
-          <p>
+        <div class="blog-card__info justify-text-center">
+          <h5 style="text-align:center">Welcome to Island Now!</h5>
+          <p style="text-align:center">
             <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i>contact us</a>
           </p>
-          <p>Hello! We are the go-to provider for all your Island renting needs, we hope you enjoy your staycation!</p>
+          <p style="text-align:center">Hello! We are the go-to provider for all your Island renting needs, we hope you enjoy your staycation!</p>
           <% if user_signed_in?%>
-          <a href="/islands" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
-          <%# <%= link_to "Discover Islands", islands_path, class: "btn btn--with-icon btn-icon fa fa-long-arrow-right" %>
+          <a href="/islands" class="btn btn--with-icon d-flex justify-content-center"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
         </div>
        <% else %>
-       <a href="/users/sign_in" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
+       <a href="/users/sign_in" class="btn btn--with-icon d-flex justify-content-center"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
        <%end%>
       </article>
     </div>
