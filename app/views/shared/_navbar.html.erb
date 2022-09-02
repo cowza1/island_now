@@ -1,18 +1,20 @@
 
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "islandnow.png" %>
-    <% end %>
+    <div class="d-flex flex-grow-1">
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "islandnow.png" %>
+      <% end %>
 
-  <%= form_with url: islands_path, method: :get, class: "d-flex search" do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a island..."
-  %>
-  <%= submit_tag "Search", class: "btn btn-flat" %>
+    <%= form_with url: islands_path, method: :get, class: "d-flex search" do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Find a island..."
+      %>
+      <%= submit_tag "Search", class: "btn btn-flat" %>
     <% end %>
+  </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
