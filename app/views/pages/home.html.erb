@@ -19,10 +19,14 @@
           </p>
           <p style="text-align:center">Hello! We are the go-to provider for all your Island renting needs, we hope you enjoy your staycation!</p>
           <% if user_signed_in?%>
+          <div style="width+ 100%;" class="d-flex justify-content-center">
           <a href="/islands" class="btn btn--with-icon d-flex justify-content-center"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
+       </div>
         </div>
        <% else %>
-       <a href="/users/sign_in" class="btn btn--with-icon d-flex justify-content-center"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
+       <div style="width+ 100%;" class="d-flex justify-content-center">
+        <a href="/users/sign_in" class="btn btn--with-icon d-flex justify-content-center"><i class="btn-icon fa fa-long-arrow-right"></i>Discover Islands</a>
+       </div>
        <%end%>
       </article>
     </div>
