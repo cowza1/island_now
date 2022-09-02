@@ -47,15 +47,15 @@
         <%= f.input :acceptance, label: false, input_html: { checked: false, class: 'd-none'} %>
         <%= f.submit 'Decline' %>
       <% end %>
-              <% elsif booking.acceptance == true%>
-                <p>Aceepted</p>
-              <% elsif booking.acceptance == false %>
-                <p>Declined</p>
-              <%end%>
-            </div>
-          </div>
-        </div>
-      </div>
-    <%end%>
-  <%end%>
+      <% elsif booking.acceptance == true%>
+      <p>Aceepted</p>
+      <% elsif booking.acceptance == false %>
+      <p>Declined</p>
+      <%end%>
+       </div>
+    </div>
+</div>
+</div>
+<%end%>
+   <%end%>
 </div>
