@@ -9,7 +9,7 @@
 
 <div class="row">
 
-  <div class="col-6 mx-6 mx-6 pt-2 pl-2 pr-2">
+  <div class="col-6 mx-6 mx-6 pl-2 pr-2" id="show-row">
     <div class="card-trip">
       <div class="image-island">
         <%=cl_image_tag @island.photo.key, crop: :fill%>
@@ -28,11 +28,13 @@
       </div>
     </div>
   </div>
-
-  <div style="width: 600px; height: 900px;"
-    data-controller="map"
-    data-map-markers-value="<%= @markers.to_json %>"
-    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-  </div>
+  <%# <div style= "padding-top: 40px"> %>
+    <div
+      class="map-card"
+      data-controller="map"
+      data-map-markers-value="<%= @markers.to_json %>"
+      data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+  <%# </div> %>
 
 </div>
