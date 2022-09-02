@@ -23,30 +23,30 @@
 </div>
    <%end%>
 </div>
-<div class="booking_container col-6">
-  <h1>Pending bookings</h1>
-  <%current_user.islands.each do |island|%>
-    <%island.bookings.each do |booking|%>
-      <div class="card-container d-flex justify-content-center m-4">
-        <div class="card-product">
-          <%=cl_image_tag booking.island.photo.key,width:400, height: 200, crop: :fill %>
-          <div class="card-product-infos">
-            <p>Contact: <%= booking.user.email%></p>
-            <p>Name: <%=booking.user.first_name%> <%=booking.user.last_name%></p>
-            <p>Number of Guests: <%=booking.number_of_guest%></p>
-            <p>Check in: <%=booking.check_in_date%></p>
-            <p>Check out: <%=booking.checkout_date%></p>
-            <div class="acceptance">
-              <%if booking.acceptance == nil%>
-                <%= simple_form_for booking do |f| %>
-                  <%= f.input :acceptance, label: false, input_html: { checked: true, class: 'd-none'} %>
-                  <%= f.submit 'Accept' %>
-                <% end %>
-                  <%= simple_form_for booking do |f| %>
-                  <%= f.input :acceptance, label: false, input_html: { checked: false, class: 'd-none'} %>
-                  <%= f.submit 'Decline' %>
-                <% end %>
 
+<div class="booking_container col-6" style="background-image: url('https://res.cloudinary.com/dpt3b8spa/image/upload/v1662127657/development/saud-edum-Mk-iBDS4CS0-unsplash_rilipv.jpg')">
+<h1>Pending bookings</h1>
+<%current_user.islands.each do |island|%>
+<%island.bookings.each do |booking|%>
+<div class="card-container d-flex justify-content-center m-4">
+<div class="card-product">
+<%=cl_image_tag booking.island.photo.key,width:400, height: 200, crop: :fill %>
+  <div class="card-product-infos">
+   <p>Contact: <%= booking.user.email%></p>
+    <p>Name: <%=booking.user.first_name%> <%=booking.user.last_name%></p>
+       <p>Number of Guests: <%=booking.number_of_guest%></p>
+      <p>Check in: <%=booking.check_in_date%></p>
+      <p>Check out: <%=booking.checkout_date%></p>
+      <div class="acceptance">
+      <%if booking.acceptance == nil%>
+      <%= simple_form_for booking do |f| %>
+        <%= f.input :acceptance, label: false, input_html: { checked: true, class: 'd-none'} %>
+        <%= f.submit 'Accept' %>
+      <% end %>
+         <%= simple_form_for booking do |f| %>
+        <%= f.input :acceptance, label: false, input_html: { checked: false, class: 'd-none'} %>
+        <%= f.submit 'Decline' %>
+      <% end %>
               <% elsif booking.acceptance == true%>
                 <p>Aceepted</p>
               <% elsif booking.acceptance == false %>

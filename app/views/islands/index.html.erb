@@ -19,13 +19,15 @@
       <span class="tag tag-blue"><%=island.location%></span>
       <h4><%=island.name%></h4>
       <p><%=island.mini_description%></p>
-      <p>$<%=island.price%></p>
+      <p><strong>Cost per night: </strong>$<%=island.price%></p>
+      <div class="show-link">
       <%=link_to"Take a closer look!", island_path(island)%>
+      </div>
     </div>
     <div class="card__footer">
       <div class="user">
         <div class="user__info">
-          <h5>By <%=island.user.first_name%></h5>
+          <h5>Host: <%=island.user.first_name%></h5>
         </div>
       </div>
     </div>
