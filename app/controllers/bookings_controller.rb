@@ -21,9 +21,15 @@ class BookingsController < ApplicationController
     redirect_to islands_path
   end
 
+  def update
+    @booking = Booking.find(params[:id])
+    @booking.update(booking_params)
+    redirect_to bookings_path
+  end
+
   private
 
   def booking_params
-    params.require(:booking).permit(:number_of_guest, :island_id, :check_in_date, :checkout_date)
+    params.require(:booking).permit(:number_of_guest, :island_id, :check_in_date, :checkout_date, :acceptance)
   end
 end
