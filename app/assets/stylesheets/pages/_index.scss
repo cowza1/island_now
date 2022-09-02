@@ -143,3 +143,22 @@ img {
   margin: 0 auto;
   text-align: center;
 }
+
+.show-link a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: 2px solid #6298C6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(60, 60, 93, 0.33);
+  position: absolute;
+  bottom: 34px;
+  left: 30px;
+}
+
+
+.show-link a:hover {
+  box-shadow: 4px 4px 4px rgba(253, 153, 2, 0.33);
+  transition: .3s;
+}
