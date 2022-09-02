@@ -1,6 +1,6 @@
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 180px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -53,4 +53,40 @@ h1 {
   color: white;
   text-shadow: 8px 2px 8px black;
   text-align: center;
+}
+
+.form-check {
+  position: absolute;
+}
+
+
+.acceptance {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[value="Accept"] {
+  background-color: white;
+  color: black;
+  border: 2px solid #6298C6;
+  padding: 3px 5px;
+  margin-bottom: 4px;
+}
+
+input[value="Accept"]:hover {
+  box-shadow: 4px 4px 4px rgba(60, 60, 93, 0.33);
+  transition: .3s;
+}
+
+input[value="Decline"] {
+  background-color: white;
+  color: black;
+  border: 2px solid #6298C6;
+  padding: 3px 5px;
+  margin-bottom: 10px;
+}
+
+input[value="Decline"]:hover {
+  box-shadow: 4px 4px 4px rgba(60, 60, 93, 0.33);
+  transition: .3s;
 }

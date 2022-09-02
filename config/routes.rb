@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   resources :islands do
     resources :bookings, only: [:new, :create, :destroy]
   end
-  resources :bookings, only: [:index, :show, :destory]
+  resources :bookings, only: [:index, :show, :destory, :update]
 end
